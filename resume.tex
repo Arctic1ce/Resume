@@ -1,0 +1,232 @@
+%-------------------------
+% Artin Davari
+% Resume in Latex
+% Template Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Artin Davari} \\ \vspace{1pt}
+    \small 650-471-3435 $|$ \href{mailto:davari@calpoly.edu}{\underline{davari@calpoly.edu}} $|$ 
+    \href{https://linkedin.com/in/artin-davari}{\underline{linkedin.com/in/artin-davari}} $|$
+    \href{https://github.com/Arctic1ce}{\underline{github.com/Arctic1ce}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California Polytechnic State University}{San Luis Obispo, CA}
+      {Bachelor of Science in Computer Science, GPA: 3.75}{Sept. 2021 -- June 2025}
+    \resumeSubheading
+      {Honors}{}
+      {Dean’s List (7 quarters), President’s List (2 years)}{}
+    \resumeSubheading
+      {Relevant Coursework}{}
+      {\parbox{0.8\textwidth}{\small \spaceskip=0.3em System Security, Compiler Security, Cryptography, Operating Systems, Computer Architecture, Programming Languages, Artificial Intelligence, Software Engineering, Databases}}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {REU-funded Summer Internship}{June 2024 -- Sept. 2024}
+      {Oregon Network Research Group, University of Oregon}{Remote}
+      \resumeItemListStart
+        \resumeItem{Worked with graduate students on the IRIS network collection project}
+        \resumeItem{Developed an application to visualize network data collected in real-time}
+        \resumeItem{Used Plotly and multiprocessing Python libraries}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineering Intern}{June 2023 -- Aug. 2023}
+      {Nebulon}{Fremont, CA}
+      \resumeItemListStart
+        \resumeItem{Cloud computing solutions, acquired by Nvidia}
+        \resumeItem{\begin{minipage}[t]{0.65\textwidth}\raggedright
+                Developed an internal application to automate the process of finding CVE cybersecurity vulnerabilities within imported packages in company repositories
+            \end{minipage}}
+        \resumeItem{\begin{minipage}[t]{0.65\textwidth}\raggedright
+                Created an application using Go to test different logging packages and determine optimal package efficiency
+            \end{minipage}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{June 2022 -- Aug. 2022}
+      {CDK Global}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{\begin{minipage}[t]{0.65\textwidth}\raggedright
+                Developed a dashboard to automate the process of adding, removing, editing, and looking up data entries in a Stash (GitHub) repository
+            \end{minipage}}
+        \resumeItem{\begin{minipage}[t]{0.65\textwidth}\raggedright
+                Developed a customer relational database, built a user-friendly dashboard to display its contents, which allowed for filtering, adding, and editing data entries
+            \end{minipage}}
+        \resumeItem{Used React for the front-end user interface}
+        \resumeItem{Used PHP to create APIs in order to execute database queries and format data}
+        \resumeItem{Designed and constructed relational databases in PostgreSQL}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Intern}{June 2019 -- June 2020}
+        {Equal Opportunities Technology}{Los Altos, CA}
+        \resumeItemListStart
+            \resumeItem{Refurbished old computers for underprivileged children for educational purposes}
+            \resumeItem{Evaluated optimal Linux based operating systems on older Macs}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{To-Do List Manager} $|$ \emph{React, Node.js, JavaScript, MongoDB}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{\begin{minipage}[t]{0.65\textwidth}\raggedright
+                Developed and deployed a full-stack application on Azure which allows users to create and manage to-do lists and tasks to keep track of items to complete
+            \end{minipage}}
+            \resumeItem{\begin{minipage}[t]{0.65\textwidth}\raggedright
+                Used Node.js and React to implement the front-end of the application, and used JavaScript for the backend API and hosted database on MongoDB Cloud
+            \end{minipage}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, Rust, PHP, Go, Assembly} \\
+     \textbf{Frameworks}{: React, Node.js, Material-UI, RestAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Jira, Stash, VSCode} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
